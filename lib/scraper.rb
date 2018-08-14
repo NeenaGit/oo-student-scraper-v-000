@@ -23,13 +23,13 @@ class Scraper
     student = {}
     profile_page = Nokogiri::HTML(open(profile_url))
       profile_page.css(".social-icon-container")
-        twitter 
-        linkedin 
+        twitter
+        linkedin
         github
         blog
         profile_quote
         bio
-    
+
   end
 
 end
