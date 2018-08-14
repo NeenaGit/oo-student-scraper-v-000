@@ -23,7 +23,7 @@ class Scraper
     student = {}
     profile_page = Nokogiri::HTML(open(profile_url))
       profile_page.css(".social-icon-container a").each do | link |
-        
+        link.attr('href')
         twitter
         linkedin
         github
